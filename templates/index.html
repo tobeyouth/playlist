@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  贴歌单
+{% endblock %}
+
+{% block header %}
+  <link rel="stylesheet" href="">
+{% endblock %}
+
+
+{% block body %}
+  <div class="wrapper">
+    <a class="logo" title="贴歌单"></a>
+    <div class="paste">
+      <form class="paste-form">
+        <div class="field">
+          <input class="input" placeholder="http://music.163.com/#/playlist?id=600658320">
+          <button class="submit">贴上去</button>
+        </div>
+        <div class="tips">
+          <p>把歌单地址贴到输入框中即可</p>
+        </div>
+      </form>
+    </div>
+  </div>    
+{% endblock %}
+
+{% block config %}
+
+{% endblock %}
