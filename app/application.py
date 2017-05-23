@@ -23,6 +23,7 @@ def create_app(debug=False):
     return app
 
 
+app = create_app(True)
+
 if __name__ == '__main__':
-    app = create_app(True)
-    app.run()
+    app.run(host='0.0.0.0')

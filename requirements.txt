@@ -1,3 +1,4 @@
+uwsgi==2.0.15
 appdirs==1.4.3
 blinker==1.4
 click==6.7
