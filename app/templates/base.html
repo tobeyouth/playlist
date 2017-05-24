@@ -10,11 +10,13 @@
     {%- block title -%}{%- endblock -%}
   </title>
   
+  <link rel="stylesheet" href="/static/dist/base.css">
   {%- block header -%}{%- endblock -%}
-
 </head>
 <body>
   {%- block body -%}{%- endblock -%}
+  <script src="/static/dist/manifest.js"></script>
+  <script src="/static/dist/base.js"></script>
   {%- block config -%}{%- endblock -%}
 </body>
 </html>

@@ -4,6 +4,7 @@
   "description": "past playlist from music.163.com & xiami.con & music.douban.com",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack -d --progress --profile --watch --color;exit 0;",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,12 +13,21 @@
   "author": "tobeyouth",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^6.7.7",
+    "autoprefixer": "^7.1.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
-    "sass-loader": "^6.0.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "sass-loader": "^6.0.5",
     "style-loader": "^0.16.1",
     "url-loader": "^0.5.8",
     "webpack": "^2.3.3"
+  },
+  "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "classnames": "^2.2.5",
+    "css-loader": "^0.28.2",
+    "jquery": "^3.2.1",
+    "node-sass": "^4.5.3"
   }
 }

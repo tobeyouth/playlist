@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block header %}
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="/static/dist/index.css">
 {% endblock %}
 
 
@@ -15,8 +15,8 @@
     <div class="paste">
       <form class="paste-form">
         <div class="field">
-          <input class="input" placeholder="http://music.163.com/#/playlist?id=600658320">
-          <button class="submit">贴上去</button>
+          <input class="input l" placeholder="http://music.163.com/#/playlist?id=600658320">
+          <button class="button l submit">贴</button>
         </div>
         <div class="tips">
           <p>把歌单地址贴到输入框中即可</p>
@@ -27,5 +27,5 @@
 {% endblock %}
 
 {% block config %}
-
+<script src="/static/dist/index.js"></script>
 {% endblock %}

@@ -1,0 +1,61 @@
+@import '~common/css/variables';
+
+%button-reset {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  line-height: 1em;
+  margin: 0;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover, &:active {
+    opacity: .8;
+  }
+}
+
+%button-active {
+  border: 1px solid $smoke-dark;
+}
+
+%button-disabled {
+  border: 1px solid $smoke-light;
+  color: $smoke-light;
+  cursor: not-allowed;
+}
+
+%button-error {
+  border: 1px solid $red;
+  color: $red;
+}
+
+.button {
+  @extend %button-reset;
+  border: 1px solid $smoke;
+
+  &:active {
+    @extend %button-active;
+  }
+
+  &.disabled {
+    @extend %button-disabled;
+  }
+
+  &.error {
+    @extend %button-error;
+  }
+
+  &.s {
+    height: $field-s-height;
+  }
+
+  &.l {
+    height: $field-l-height;
+  }
+}

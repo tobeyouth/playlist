@@ -1,0 +1,56 @@
+@import '~common/css/variables';
+
+%input-reset {
+  box-sizing: border-box;
+  vertical-align: top;
+  outline: none;
+  width: 100%;
+  margin: 0px;
+  font-size: $content-size;
+  border: 1px solid $smoke;
+  border-radius: 2px;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+// status
+%input-focus {
+  border: 1px solid $smoke-dark;
+}
+
+%input-error {
+  border: 1px solid $red;
+  color: $red;
+}
+
+%input-disabled {
+  border: 1px solid $smoke-light;
+  color: $smoke-light;
+  cursor: not-allowed;
+}
+
+.input {
+  @extend %input-reset;
+  height: $field-m-height;
+
+  &:focus {
+    @extend %input-focus;
+  }
+
+  &.disabled {
+    @extend %input-disabled;
+  }
+
+  &.error {
+    @extend %input-error;
+  }
+
+  &.s {
+    height: $field-s-height;
+  }
+  
+  &.l {
+    height: $field-l-height;
+  }
+
+}
